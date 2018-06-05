@@ -37,6 +37,6 @@
 	 
 	 <!-- Colocar icono app -->
 	 
-	 <icon src="res/android/Location.png"/>
+	 <icon src="res/android/open-folder-icon.png"/>
 	 
 	 </widget>

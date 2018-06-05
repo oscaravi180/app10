@@ -1,0 +1,750 @@
+<!doctype html>
+<html>
+ <head>
+ <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ <meta charset="utf-8">
+ <title>Programación Orientada a Objetos 
+Conceptos </title>
+ 
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app10.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!-- <script src="js/acciones.js"></script-->
+  <script src="phonegap.js"></script>
+ 
+
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+
+<body onLoad="MM_preloadImages('basededatos1.jpg','dsaupoo.png','basededatos2.jpg','programa.png','programador1.jpg','imagenes/programador6.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Programación Orientada a Objetos 
+ </h1>
+    </div>
+    
+ <div>
+ <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-"b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Conceptos de la POO </h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Clases y Objetos </h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Palabras Reservadas</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Sentencias</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Elementos Estaticos</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Clase Astracta</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Interfaces</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Relación de Clases</h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Beneficio de los interfaces </h2>
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>Datos del estudiante</h2>
+   </a>
+  </li>
+  </ul>
+  </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div> <img src="res/android/open-folder-icon.png" alt="hola" width="46" heiht="46"> </div>
+   <h4>Aplicacion diez, OAT</h4>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>CONCEPTO DE POO</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>DEFINICION DE POO</h1>
+   <div>
+   <center>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="center" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.researchgate.net/publication/280091702_Introduccion_a_la_Programacion_Orientada_a_Objetos" data-role="button" id="link1">
+<h2> Introducción a POO</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</CENTER>
+     </div>
+   </div>
+   </div>
+<div data-role="content" align="center">
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','basededatos2.jpg',1)"><img src="data2/programador3.jpg" width="50%" height="50%" id="Image14"></a><BR>
+
+La programación orientada a objetos establece un equilibrio entre la importancia de los <br>
+procesos y los datos, mostrando un enfoque más cercano al pensamiento del ser humano. <br>
+Se introduce un aspecto novedoso respecto al anterior paradigma: la herencia, facilitando <br>
+el crecimiento y la mantenibilidad. Las bases de la programación orientada a objetos son: <br>
+abstracción, encapsulación, modularidad y jerarquización. La abstracción es un proceso mental <br>
+de extracción de las características esenciales, ignorando los detalles superfluos. Resulta<br>
+ ser muy subjetiva dependiendo del interés del observador, permitiendo abstracciones muy <br>
+ diferentes de la misma realidad La encapsulación es ocultar los detalles que dan soporte a un<br>
+  conjunto de  características esenciales de una abstracción. Existirán dos partes, una visible<br>
+   que todos tienen acceso y se aporta la funcionalidad, y una oculta que implementa los <br>
+   detalles internos. La modularidad es descomponer un sistema en un conjunto de partes. Aparecen <br>
+   dos conceptos muy importantes: acoplamiento y cohesión El acoplamiento entre dos módulos mide<br>
+    el nivel de asociación entre ellos; nos interesa buscar módulos poco acoplados  La cohesión de<br>
+     un módulo mide el grado de conectividad entre los elementos que los forman; nos interesa buscar<br>
+      una cohesión alta La jerarquía es un proceso de estructuración de varios elementos por niveles.<br>
+       La programación orientada a objetos implementa estos cuatro conceptos con los siguientes elementos:<br>
+        clases y objetos, atributos y estado, métodos y mensajes, herencia y polimorfismo. <br>
+</div>
+
+
+</div>
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>CLASES Y OBJECTOS</h1>
+</div>
+<div data-role="content" align="center">
+<div><center> 
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','programa.png',1)"><img src="dsaupoo_1.jpg" width="50%" height="50%" id="Image15"></a>
+<h3> CLASES Y OJECTOS</h3></center> 
+Una clase describe las estructuras de datos que lo forman y las funciones asociadas con él. <br>
+Una clase es un modelo con el que se construyen los objetos. Un objeto es un ejemplar concreto<br>
+ de una clase, que se estructura y comporta según se definió en la clase, pero su estado es<br>
+  particular e independiente del resto de ejemplares. Al proceso de crear un objeto se le llama<br>
+   generalmente instanciar una clase. Las clases asumen el principio de encapsulación, se describe <br>
+   una vista pública que representa la funcionalidad de la misma, y una vista privada que describe los <br>
+   detalles de implementación. Una clase es el único bloque de construcción, y por lo tanto, en una <br>
+   aplicación Java sólo hay clases; no existen datos sueltos ni procedimientos. <br> <br>
+<center><h3>   
+ATRIBUTOS Y ESTADO</h3></center>    
+Un atributo es cada uno de los datos de una clase que la describen; no incluyen los datos <br>
+auxiliares utilizados para una implementación concreta. <br>
+El estado de un objeto es el conjunto de valores de sus atributos en un instante dado. 
+<center><h3> 
+MÉTODOS Y MENSAJES</h3></center>  
+Un método define una operación sobre un objeto. En general, realizan dos posibles acciones: <br>
+consultar el estado del objeto o modificarlo. Los métodos disponen de parámetros que permiten <br>
+delimitar la acción del mismo. Nos podemos encontrar con diversos tipos de métodos:  Consultan o<br>
+ modifican un atributo, normalmente nos referenciaremos a ellos como: getters & setters  Realizan <br>
+ operaciones sobre el conjunto de atributos, calculando valores o realizando modificaciones  <br>
+ Inicializan los atributos al principio del ciclo de vida, o liberan los recursos al final del ciclo;<br>
+  nos referiremos a ellos como constructores o destructores Un mensaje es la invocación de un método <br>
+  de un objeto. Podemos decir que un objeto lanza un mensaje (quien realiza la invocación) y otro <br>
+  lo recibe (el que ejecuta el método). Podemos rescribir que una clase es la descripción e <br>
+  implementación de un conjunto de atributos y métodos. 
+<center> <h3><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','programador1.jpg',1)"><img src="programa.jpg" width="50%" height="50%" id="Image16"></a><BR>
+HERENCIA Y POLIMORFISMO </h3></center> 
+La herencia es una característica que permite a las clases definirse a partir de otras, y así <br>
+reutilizar su funcionalidad. A la clase padre se le llama superclase, clase base..., y a la hija<br>
+ subclase, clase derivada.... El polimorfismo es la capacidad de que un mismo mensaje funcione con<br>
+  diferentes objetos. Es aquél en el que el código no incluye ningún tipo de especificación sobre el<br>
+   tipo concreto de objetos sobre el que se trabaja. El método opera sobre un conjunto de posibles <br>
+   objetos compatibles
+
+ </h2>
+</div>
+
+
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>PALABRAS RESERVADAS</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Palabras reservadas</h1>
+   <div>
+   <center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','dsaupoo.png',1)"><img src="basededatos3.png" width="413" height="264" id="Image13"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="center" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://aprendepooconjava.blogspot.com/2012/09/palabras-reservadas-en-java.html" data-role="button" id="link2">
+<h2> Palabras reservadas</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+   </CENTER>
+     </div>
+   </div>
+   </div>
+
+<div data-role="content" align="center">
+<div>
+  PALABRAS RESERVADAS  <br>
+ abstract, assert, Boolean, break, byte, case, catch, char, class, <br>
+ const, continue, default, do, double, else, enum, extends, final, <br>
+ finally, float, for, goto, if, implements, import, instanceof, int,<br>
+  interface, long, native, new, package, private, protected, public,<br>
+   return, short, static, strictfp, super, synchronized, switch, this,<br>
+    throw, throws, transient, try, void, volatile, while.<br>
+  
+ LITERALES <br>
+ Los valores numéricos están en notación decimal. Para realizarlos <br>
+ en notación hexadecimal se añade “0x”, por ejemplo 0xffff. El tamaño<br>
+  por defecto de un entero es int, y de un decimal double. Para cambiar <br>
+  el tamaño a long se añade “L” al final (ej. 23L), para cambiar a float <br>
+  se añade ‘F”. Los caracteres van entre comillas simples (ej. ‘x’). <br>
+  Los caracteres escape van precedidos por ‘\’, algunos ejemplos son:<br><ceter>
+   <ul>
+   <li> ‘\n’: retorno de carro
+    <li>‘\t’: tabulador
+     <li>‘\’’: comillas simples
+     <li> ‘\”’: comillas dobles 
+    <li> ‘\\’: propia barra
+     <li>  ‘\b’: pitido 
+     <li> ‘\u----’: valor Unicode 
+     </ul></center><br>
+     Los caracteres Unicode van precedidos por el carácter ‘u’ y en <br>
+     notación hexadecimal, algunos ejemplos serían: ‘\u0064’, ‘\u1234’.<br>
+     
+OPERADORES<br>
+ Los operadores de Java son:<br>
+  <ul> Asignación
+  <li> ▫ =. Ej.: x=y; 
+</ul> <ul>  Aritméticos
+   <li>▫ ++, --. Suma o resta 1, ej.: x++; ++x;
+ <li>  ▫ - . Cambio de signo, ej.: –x;
+ <li>   ▫ *, /. Multiplicación y división, ej.: x*y; 
+ <li>   ▫ %. Resto de la división, ej.: x%y; ▫ +, -. Suma y resta, ej.: x+2;
+    <li> ▫ +=, -=, *=, /=, %=. Ej.: x+=2; x=x+2;  Binarios
+  <li>    ▫ ~. Not, ej.: ~x;
+    <li>   ▫ <<. Desplazamiento a la izquierda, se introducen ceros, ej.: x<<2; 
+   <li>   ▫ >>. Desplazamiento a la derecha, se mantiene signo, ej.: x>>2; 
+  <li>    ▫ >>>. Desplazamiento a la derecha introduciendo ceros
+  <li>     ▫ &, | y ^. And, or y xor, ej.: x&12; 
+  </ul>
+<p> Comparación
+  </p>
+<p>▫ ==, ¡=, <, >, <=, >=. Igual, distinto, menor que...</p>
+<p>  Lógicos</p>
+<p> ▫ !. Not lógico 
+  </p>
+<p>▫ &, &&, |, || y ^. And, and perezoso, or, or perezoso y xor</p>
+<p> El operador “+” entre String realiza la función de concatenación. </p>
+<p>EXPRESIONES 
+  </p>
+<p>Las expresiones son una combinación de operadores y operandos. </p>
+<p>La precedencia y asociatividad determina de forma clara la evaluación. El orden aplicado es:  </p>
+<p> Paréntesis: ( )</p>
+<p>  Unarios: + - ! </p>
+<p> Multiplicativos: * / %</p>
+<p>  Aditivos: + -</p>
+<p>  Relacionales: < > <= >= 
+  </p>
+<p> Igualdad: == != </p>
+<p> Y lógico: & && 
+  </p>
+<p> O lógico: | || </p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Sentencias</h1>
+</div>
+<div data-role="content" align="center">
+  <p>Sentencias <br>
+    En general, todas las sentencias acaban con “;”. <br>
+    SENTENCIA DE BLOQUES <br>
+     Agrupa en una sentencia de bloque un conjunto de sentencias. <br>
+      Para ello se sitúan entre llaves. <br>
+    { sentencia1; sentencia2; ...} <br>
+    Sentencias condicionales <br>
+    SENTENCIA IF <br>
+     La sentencia if es una de las más básicas y nos permite  <br>
+     controlar el flujo de control dependiendo de una condición.  <br>
+     Los dos formatos posibles son: <br>
+    if (condicion) sentencia1;   <br>
+     if (condición) sentencia1; else sentencia2; <br>
+    Si en lugar de una sentencia tenemos varias, se debe utilizar  <br>
+    la sentencia de bloque. Algunos ejemplos son: <br>
+    if (a == 3) {<br>
+             b = 8;<br>
+                  }   <br>
+                    if (a > 2) { <br>
+                            a -= 1;<br>
+                                b += 1; 
+                                 } <br>
+                                       if (a > 2) { <br>
+                                               a -= 1; <br>
+                                                       b += 1;<br>
+    } else a += 1; </p>
+  <p>Todas las sentencias se pueden anidar. Recordar que se debe aplicar un tabulador para su mejor comprensión. Un ejemplo sería: <br>
+if (a &gt; 2) {         if (b == 8) {             b++;         }     } else {         b--;     } </p>
+  <p><br>
+    SENTENCIA ELSE-IF</p>
+  <p> Aunque la sentencia else-if no existe como tal, queremos presentarla de forma independiente ya que debe tener</p>
+  <p> un estilo peculiar de tabulación. Se considera una sentencia else-if si en la condición siempre se evalúa una </p>
+  <p>misma variable o expresión; aunque existan anidamientos de sentencias, los tabuladores aplicados y el</p>
+  <p> uso de llaves son diferentes a las normas generales</p>
+  <p> Un ejemplo sería: <br>
+    if (a==0) {         sentencia1;     }</p>
+  <p> else if (a == 1 | a == 2) </p>
+  <p>{         sentencia2;     } else if (a &lt; 10) </p>
+  <p>{      sentencia3;      sentencia4;     } else</p>
+  <p> {   // No se debiera llegar aquí     } </p>
+  <p><br>
+    SENTENCIA SWITCH</p>
+  <p> Esta sentencia evalúa una expresión, y dependiendo de su valor, ejecuta un conjunto de sentencias. Sólo se puede aplicar a valores primitivos, enumerados y a clases especiales. Su formato es: </p>
+  <p><br>
+    switch (Expresion)</p>
+  <p> {         case valor:             sentencia1;             </p>
+  <p>sentencia2;             break;</p>
+  <p> case valor2:         case valor3:             sentencia3</p>
+  <p>;             break;       case valor4:             sentencia4; </p>
+  <p>break;         default: sentencia5;     } <br>
+    Sentencias de bucles </p>
+  <p><br>
+    SENTENCIA WHILE Y DO WHILE</p>
+  <p> Estas sentencias se utilizan para realizar bucles o repeticiones hasta que se cumpla una determinada condición, </p>
+  <p>pero a priori es indefinido el número de veces que se puede repetir. La sentencia while tiene una repetición de 0 a n,</p>
+  <p> y la sentencia do while de 1 a n. Su formato es: </p>
+  <p><br>
+    while (condición) {         sentencia;         sentencia;         sentencia;     } <br>
+    do {         senten2;     } while (condición)</p>
+  <p> <br>
+    SENTENCIA FOR</p>
+  <p> Esta sentencia realiza un bucle, donde existe un índice de iteración y la condición de fin depende del índice. </p>
+  <p>Tiene tres partes separadas por “;”: la primera se inicializan los índices (si hay más de uno se separan por “,”),</p>
+  <p> la segunda es la condición de terminación (el bucle se repite mientras se cumpla la condición) y la tercera es el </p>
+  <p>incremento de los índices.  Si los índices se declaran en el propio for, no se podrán utilizar fuera de éste. </p>
+  <p>Normalmente, la condición debe depender del valor del índice. Su formato es:</p>
+  <p> <br>
+    for (inicialización; terminación(mientras); </p>
+  <p>operación) {        sentencia1;      ...     } <br>
+    Mostramos algunos ejemplos: <br>
+    for (int i = 1; i &lt;= 10; i++) {         a *= 2;     } <br>
+    int i, j;     for (i = 1, j = 1; (i &lt;= 5) &amp;&amp; (j &lt;= 5); i++, j += 2) {         // ...     } <br>
+    for (;;) {         // ...     } // bucle infinito </p>
+  <p><br>
+    SENTENCIA CONTINUE Y BREAK </p>
+  <p>Con la sentencia continue, se continúa con la siguiente interacción del bucle; puede aparecer el varios lugares del bucle,</p>
+  <p> pero normalmente asociado a una condición. Con la sentencia break abortamos el bucle, o en general, el bloque donde se </p>
+  <p>ejecute.  Es posible que necesitemos un bucle con índice y además una condición especial de finalización, en este caso, </p>
+  <p>se recomienda el bucle for con la sentencia break para la condición especial.</p>
+  <p> Un ejemplo sería: <br>
+    int a = 1;   for (int i = 1; i &lt;= 100; i++)</p>
+  <p> {    if (a % 5 == 0) continue;    </p>
+  <p>if (a &gt; 1000) break;    a += a * 2 + 1;   } </p>
+  <p><br>
+    SENTENCIA FOR EACH</p>
+  <p> Esta sentencia es  útil para procesar una colección de datos, donde sólo nos interesa el conjunto de datos y</p>
+  <p> no el orden con que se procesan. Se puede aplicar a las clases Collection y a los arrays. Su formato es: <br>
+    for (int item: array)</p>
+  <p>{         // en la variable item tenemos el dato     } <br>
+    Un posible ejemplo sería: </p>
+  <p><br>
+    int[] datos = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };</p>
+  <p> for (int item : datos) {         System.out.println(item);     } <br>
+    Es equivalente al siguiente bucle: <br>
+    for (int i=0; i&lt;datos.length;i++) </p>
+  <p>{         System.out.println(datos[i]);     } <br>
+  </p>><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/programador6.jpg',1)"><img src="imagenes/programador4.jpg" width="60%" height="60%" id="Image34"></a>
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Elementos estáticos </h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>php</h1>
+   <div>
+   <center>
+
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="center" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.alegsa.com.ar/Dic/programacion_orientada_a_objetos.php" data-role="button" id="link2">
+<h2>PROGRAMACÍON O.O. PHP</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+
+   </CENTER>
+     </div>
+   </div>
+   </div>
+
+<div data-role="content" align="center">
+<div>
+  <p>Elementos estáticos </p>
+  <p>Todos los conceptos expuestos giran en torno a una idea principal: la clase describe el comportamiento de cada uno de sus</p>
+  <p> objetos. El presenta apartado pretende dar solución a cuestiones de la clase y de todos los objetos en su generalidad.</p>
+  <p> Por ejemplo, si definimos una constante de una clase que tenga siempre el mismo valor, es común a todos los objetos,</p>
+  <p> y por lo tanto, debe estar asociado a la clase y no a las instancias. Podemos definir atributos estáticos y métodos estáticos. <br>
+  </p>
+  <p>ATRIBUTOS ESTÁTICOS </p>
+  <p>Para definirlos se antepone al tipo la palabra static; se deben inicializar independientemente a los constructores.</p>
+  <p> Estos atributos están compartidos por todos los objetos de la clase y son accesibles desde cada uno de ellos.</p>
+  <p> Cualquier modificación por parte de un objeto afectará al resto. Para el acceso a un atributo, en lugar de utilizar this,</p>
+  <p> se utiliza el nombre de la clase: Clase.atributo. Normalmente, las constantes asociadas a la clase son buenas </p>
+  <p>candidatas para realizarlas estáticas.</p>
+  <p> Un ejemplo sería: </p>
+  <p><br>
+    public class MiClase{  <br>
+    private static final int MAX = 100;  <br>
+    //...<br>
+    } </p>
+  <p>MÉTODOS ESTÁTICOS </p>
+  <p>Al igual que los atributos, se antepone la palabra static al tipo devuelto. No puede utilizar en el código la palabra this,</p>
+  <p> ya que está asociado exclusivamente a las instancias. Se pueden acceder a los atributos estáticos del mismo modo</p>
+  <p> que pueden las instancias, anteponiendo el nombre de la clase: Clase.atributo. Se permite definir un código estático para </p>
+  <p>inicializar los atributos estáticos. Su ejecución se dispara una sola vez al principio. Tiene el siguiente formato: <br>
+    static {   //...  } <br>
+  </p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Clase astracta</h1>
+</div>
+
+<div data-role="content" align="center">
+<div>
+  <p>Una clase abstracta es una clase que no se puede instanciar, pero si heredar. También, se pueden definir constructores.</p>
+  <p> Se utilizan para englobar clases de diferentes tipos, pero con aspectos comunes. Se pueden definir métodos sin implementar</p>
+  <p> y obligar a las subclases a implementarlos. Por ejemplo, podemos tener una clase Figura, que representa una figura general,</p>
+  <p> y subclases con figuras concretas (Triangulo, Circulo...). Podemos establecer métodos comunes como dibujar, que sin conocer el</p>
+  <p> tipo de figura, sea capaz de dibujarla. Pero para que esto funcione correctamente, cada figura concreta debe implementar su versión </p>
+  <p>particular de dibujar. Si añadimos el calificador abstract después del calificativo public del método, le convertimos en abstracto y no hace </p>
+  <p>falta que lo implementemos, basta con definirlo. Si añadimos abstract después del calificativo public de la clase, la convertimos en clase abstracta;</p>
+  <p> esta acción es obligatoria si algún método es abstracto. La ventaja en utilizar clases abstractas, es que podemos trabajar con variables o parámetros </p>
+  <p>de tipo Figura y llamar a los métodos comunes sin saber a priori el tipo concreto de Figura. Esto permite en el futuro, añadir nuevas Figuras, </p>
+  <p>sin cambiar las clases ya desarrolladas. A este concepto se le llama polimorfismo. El polimorfismo es el modo en que la POO implementa la </p>
+  <p>polisemia, es decir, un solo nombre para muchos conceptos.  Este tipo de polimorfismo se debe resolver en tiempo de ejecución y por ello</p>
+  <p> hablamos de polimorfismo dinámico, a diferencia del polimorfismo estático que se puede resolver en tiempo de compilación. Recordemos que </p>
+  <p>éste último se implementaba mediante la sobrecarga de los métodos.
+  <br>
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/programador15.jpg" alt="programador15" title="programador15" id="wows2_0"/></li>
+		<li><img src="data2/images/programador16.jpg" alt="programador16" title="programador16" id="wows2_1"/></li>
+		<li><img src="data2/images/programador17.jpg" alt="programador17" title="programador17" id="wows2_2"/></li>
+		<li><img src="data2/images/programador18.jpg" alt="programador18" title="programador18" id="wows2_3"/></li>
+		<li><img src="data2/images/programador19.jpg" alt="programador19" title="programador19" id="wows2_4"/></li>
+		<li><img src="data2/images/programador12.jpg" alt="programador12" title="programador12" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/programador13.jpg" alt="responsive slider" title="programador13" id="wows2_6"/></a></li>
+		<li><img src="data2/images/programador14.jpg" alt="programador14" title="programador14" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="programador15"><span><img src="data2/tooltips/programador15.jpg" alt="programador15"/>1</span></a>
+		<a href="#" title="programador16"><span><img src="data2/tooltips/programador16.jpg" alt="programador16"/>2</span></a>
+		<a href="#" title="programador17"><span><img src="data2/tooltips/programador17.jpg" alt="programador17"/>3</span></a>
+		<a href="#" title="programador18"><span><img src="data2/tooltips/programador18.jpg" alt="programador18"/>4</span></a>
+		<a href="#" title="programador19"><span><img src="data2/tooltips/programador19.jpg" alt="programador19"/>5</span></a>
+		<a href="#" title="programador12"><span><img src="data2/tooltips/programador12.jpg" alt="programador12"/>6</span></a>
+		<a href="#" title="programador13"><span><img src="data2/tooltips/programador13.jpg" alt="programador13"/>7</span></a>
+		<a href="#" title="programador14"><span><img src="data2/tooltips/programador14.jpg" alt="programador14"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section --> </p>
+  
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Interfas</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>PHP</h1>
+   <div>
+   <center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','basededatos1.jpg',1)"><img src="programador18.jpg" width="650" height="419" id="Image12"></a>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="center" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.desarrolloweb.com/articulos/499.php" data-role="button" id="link2">
+<h2>PROGRAMACÍON O.O. PHP 2 </h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+   </CENTER>
+     </div>
+   </div>
+  </div>
+<div data-role="content" align="center">
+<div>
+<p>Un interface en Java es un tipo abstracto que representa un conjunto de métodos que las clases pueden implementar y un</p>
+<p> conjunto de constantes estáticas, es similar a una clase abstracta pura. Igual que las clases abstractas, los interfaces no </p>
+<p>se puede instanciar. Su utilidad es crear variables de tipo interface e independizarse de las clases que contiene. </p>
+<p>Para definir un interface se realiza de forma similar a una clase abstracta pero con la palabra interface en lugar de class. </p>
+<p>Pueden existir variables o parámetros de tipo interface, pero sólo pueden contener instancias de clases que hayan implementado </p>
+<p>el interface. Los interfaces pueden heredar de otros mediante la palabra extends, además se permite herencia múltiple. </p>
+<p>Mediante interfaces también se aporta el polimorfismo, de hecho, una clase abstracta con todos sus métodos abstractos es</p>
+<p> similar a un interface. En general, es mejor utilizar interface; sólo cuando se necesite añadir código, se debe utilizar las clases abstractas. </p></div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Relacion de Clases</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/dsaupoo_2.jpg" alt="dsaupoo_2" title="dsaupoo_2" id="wows1_0"/></li>
+		<li><img src="data1/images/gui.png" alt="gui" title="gui" id="wows1_1"/></li>
+		<li><img src="data1/images/programa.jpg" alt="programa" title="programa" id="wows1_2"/></li>
+		<li><img src="data1/images/basededatos1.jpg" alt="basededatos1" title="basededatos1" id="wows1_3"/></li>
+		<li><img src="data1/images/basededatos2.jpg" alt="basededatos2" title="basededatos2" id="wows1_4"/></li>
+		<li><img src="data1/images/basededatos3.png" alt="basededatos3" title="basededatos3" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/dsaupoo.png" alt="css slider" title="dsaupoo" id="wows1_6"/></a></li>
+		<li><img src="data1/images/dsaupoo_1.jpg" alt="dsaupoo_1" title="dsaupoo_1" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="dsaupoo_2"><span><img src="data1/tooltips/dsaupoo_2.jpg" alt="dsaupoo_2"/>1</span></a>
+		<a href="#" title="gui"><span><img src="data1/tooltips/gui.png" alt="gui"/>2</span></a>
+		<a href="#" title="programa"><span><img src="data1/tooltips/programa.jpg" alt="programa"/>3</span></a>
+		<a href="#" title="basededatos1"><span><img src="data1/tooltips/basededatos1.jpg" alt="basededatos1"/>4</span></a>
+		<a href="#" title="basededatos2"><span><img src="data1/tooltips/basededatos2.jpg" alt="basededatos2"/>5</span></a>
+		<a href="#" title="basededatos3"><span><img src="data1/tooltips/basededatos3.png" alt="basededatos3"/>6</span></a>
+		<a href="#" title="dsaupoo"><span><img src="data1/tooltips/dsaupoo.png" alt="dsaupoo"/>7</span></a>
+		<a href="#" title="dsaupoo_1"><span><img src="data1/tooltips/dsaupoo_1.jpg" alt="dsaupoo_1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+  <p>Una aplicación orientada a objetos es una colección de objetos, algunos jerárquicos, que colaboran entre sí</p>
+  <p> para dar una funcionalidad global. Cada objeto debe asumir una parte de las responsabilidades y delegar otras a los objetos </p>
+  <p>colaboradores. Existirá un objeto que asume las funciones de la aplicación principal, será el encargado de crear las instancias</p>
+  <p> oportunas y tener un único punto de entrada (main). Cabe hacernos una pregunta fundamental, ¿en cuántos objetos debemos</p>
+  <p> descomponer la aplicación? Si realizamos objetos muy pequeños, cada uno de ellos será fácil de desarrollar y mantener, </p>
+  <p>pero resultará difícil la integración. Si realizamos objetos grandes, la integración será fácil, pero el desarrollo de los objetos </p>
+  <p>complicado. Se debe buscar un equilibrio. En definitiva, y sin adentrar más en la estructuración de las clases de una aplicación,</p>
+  <p> nuestra aplicación tendrá un conjunto de clases que están relacionadas entre ellas. Se considera que existe una relación entre</p>
+  <p> clases si sus objetos colaboran, es decir, se mandan mensajes. Tenemos, principalmente, tres tipos de relaciones entre clases: </p>
+  <p>uso, agregación y composición, aparte de la herencia que ya vimos. </p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Beneficio de los interfaces </h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>YouTube</h1>
+   <div>
+   <center>
+ 
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="center" data-theme="b">
+<li class="ui-first-child ui-last-child">
+<a href="https://www.youtube.com/watch?v=AonGYo7VV7Y" data-role="button" id="link2">
+<h2>PROGRAMACÍON YOUTUBE</h2>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+   
+   </div>
+  </div>
+
+<div data-role="content" align="center">
+<div>
+   <p>En una relación de agregación entre la clase A y la clase B, la clase A debe lanzar mensajes a la clase B,</p>
+   <p> y para ello es necesario que a la clase A le pasen la referencia de la clase B. Una vez implementada la clase A,</p>
+   <p> cualquier cambio en la clase B (por ejemplo, una mejora o cambio en la implementación de B) provoca que debiéramos </p>
+   <p>cambiar todas las referencias de la clase A sobre la B. Incluso puede que cuando se desarrolla la clase A, no se dispone </p>
+   <p>de la implementación de la clase B.  Para ello disponemos de dos mecanismos:  Mediante herencia de clases. En este caso, </p>
+   <p>la clase A referencia los métodos de una superclase B, pudiendo existir varias subclases de B que sirvan a tal fin. </p>
+   <p> Mediante interfaces. Aquí, la clase A referencia los métodos de un interface, pudiendo existir un conjunto de clases que</p>
+   <p> implementan ese interface.  Fijarse, que en ambos casos, cualquier cambio en las implementaciones de B no afectan al código</p>
+   <p> de la clase A.  
+     
+     Veamos un ejemplo concreto. En esta asociación existe una dependencia clara entre la clase Servidor y la clase</p>
+   <p> Cliente.  
+     
+     Pero en este ejemplo tenemos un problema, ya que se pretende construir un servidor para que de servicio a muchos </p>
+   <p>clientes y se debe romper esa dependencia. Obligar a los clientes a heredar de una clase no es una buena solución, ya que le</p>
+   <p> limitamos en su diseño. La mejor solución es utilizar los interfaces. A continuación presentamos el nuevo diseño: </p>
+   </div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="REGRESAR" data-back-btn-theme="a">
+<h1>Datos del programador</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p>OSCAR AVILA TACOMULCO</p>
+  <p>4TO ¨H¨</p>
+  <p>DISEÑO DE APLICACIONES MOVILES</p>
+  <p>ÁNTONIO GOMEZ HERNANDEZ</p>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/open-folder-icon.png" width="46" heiht="46">
+</div>
+<h4>Aplicacion diez, OAT</h4>
+</div>
+</div>
+
+</body>
+</html>
+
